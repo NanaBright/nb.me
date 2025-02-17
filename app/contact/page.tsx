@@ -6,7 +6,7 @@ export default function Contact() {
             <h1 className="text-6xl font-bold mb-8">Contact Me</h1>
             <div className="max-w-2xl">
                 <p className="text-xl mb-8">
-                    I'm always open to new opportunities and collaborations. Feel free to reach out to me through any of the following channels:
+                    I&apos;m always open to new opportunities and collaborations. Feel free to reach out to me through any of the following channels:
                 </p>
                 <ul className="space-y-4 mb-8">
                     <li className="text-xl">

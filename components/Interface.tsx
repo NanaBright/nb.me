@@ -1,15 +1,19 @@
 "use client"
 
-import { useState } from "react"
+import { useState, JSX } from "react"
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Github, Linkedin, Mail, Phone } from "lucide-react"
 
 export default function Interface() {
-  const [activeSection, setActiveSection] = useState("about")
+  // Define a type for the section keys
+  type SectionKey = 'about' | 'projects' | 'skills';
 
-  const sections = {
+  // Set the state with the correct type
+  const [activeSection, setActiveSection] = useState<SectionKey>('about');
+
+  const sections: Record<SectionKey, { title: string; content: JSX.Element | string }> = {
     about: {
       title: "About Me",
       content:
@@ -48,7 +52,7 @@ export default function Interface() {
             key={section}
             variant="ghost"
             className="text-white hover:text-gray-200 pointer-events-auto backdrop-blur-sm bg-white/10"
-            onClick={() => setActiveSection(section)}
+            onClick={() => setActiveSection(section as SectionKey)}
           >
             {section.charAt(0).toUpperCase() + section.slice(1)}
           </Button>
@@ -108,4 +112,3 @@ export default function Interface() {
     </div>
   )
 }
-
