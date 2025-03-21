@@ -3,8 +3,7 @@
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { ChevronRight } from "lucide-react"
-import Image from "next/image"
-
+import { Nav } from "@/components/nav"
 export default function Home() {
   const [currentSection, setCurrentSection] = useState(0)
 
@@ -35,32 +34,9 @@ export default function Home() {
 
   return (
     <main className="bg-black min-h-screen text-white relative overflow-hidden">
-      {/* Navigation */}
-      <nav className="fixed top-0 left-0 w-full z-50 px-8 py-6 flex justify-between items-center">
-        <Image
-          src="/imgnb.png" // Make sure this path is correct
-          alt="Bright Yanchirah"
-          width={40}
-          height={40}
-          className="object-cover rounded-full"
-        />
-        <div className="text-2xl font-bold">BRIGHT.YANCHIRAH</div>
-        <div className="flex gap-8 text-sm">
-          <a href="/about" className="hover:text-gray-300 transition-colors">
-            ABOUT
-          </a>
-          <a href="/projects" className="hover:text-gray-300 transition-colors">
-            PROJECTS
-          </a>
-          <a href="/skills" className="hover:text-gray-300 transition-colors">
-            SKILLS
-          </a>
-          <a href="/contact" className="hover:text-gray-300 transition-colors">
-            CONTACT
-          </a>
-        </div>
-      </nav>
+     
 
+      <Nav />
       {/* Main Content */}
       <AnimatePresence mode="wait">
         <motion.div
