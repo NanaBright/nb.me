@@ -6,6 +6,30 @@
   body {
     @apply bg-black text-white;
   }
+}
+
+/* Custom Fonts */
+@font-face {
+  font-family: "Geist";
+  src: url("/fonts/Geist-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Geist";
+  src: url("/fonts/Geist-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Apply custom font */
+html {
+  font-family: "Geist", sans-serif;
+}
+
+
+@layer base {
   :root {
 
     --background: 0 0% 100%;
@@ -114,7 +138,5 @@
   * {
     @apply border-border;
   }
-  body {
-    @apply bg-background text-foreground;
-  }
+ 
 }

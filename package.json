@@ -24,9 +24,11 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "@types/estree": "^1.0.8",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@types/webxr": "^0.5.22",
     "eslint": "^9",
     "eslint-config-next": "15.1.7",
     "postcss": "^8",
