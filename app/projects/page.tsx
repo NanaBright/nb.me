@@ -32,7 +32,7 @@ export default function Projects() {
             techStack: ["React", "Solidity", "Hardhat", "Ethers.js", "Tailwind CSS", "MetaMask"],
             status: "Deployed",
             features: ["Wallet Integration", "ETH Transactions", "Message Attachments", "Transaction History", "Smart Contracts"],
-            link: "https://github.com/NanaBright/eldo",
+            link: "https://eldo-five.vercel.app/",
             type: "blockchain"
         },
         {
@@ -52,7 +52,7 @@ export default function Projects() {
             techStack: ["Next.js 15", "React 19", "PostgreSQL", "Prisma ORM", "Leaflet Maps", "JWT"],
             status: "Development",
             features: ["Verified Businesses", "Direct Actions", "Mobile-First", "Real-time Data", "Location Services"],
-            link: "#",
+            link: "https://vercel.com/nanabrights-projects/slatetnd",
             type: "web"
         },
         
@@ -64,7 +64,7 @@ export default function Projects() {
             techStack: ["Next.js", "Node.js", "Express", "SQLite", "JWT", "React Context"],
             status: "Fully Operational",
             features: ["Tax Calculations", "Transaction History", "PAYE Calculator", "Report Generation", "Public API"],
-            link: "#",
+            link: "https://tax-api-dashboard.vercel.app",
             type: "fintech"
         },
         {
@@ -254,7 +254,7 @@ export default function Projects() {
                 <div className="mt-16 text-center">
                     <h3 className="text-2xl font-bold mb-4">More Projects Coming Soon!</h3>
                     <p className="text-gray-300 mb-8">
-                        I'm always working on new exciting projects. Check back regularly for updates.
+                        I&apos;m always working on new exciting projects. Check back regularly for updates.
                     </p>
                     <Link 
                         href="/" 

@@ -1,5 +1,6 @@
 // components/ProjectCard.tsx
 import React from "react";
+import Image from "next/image";
 
 interface ProjectCardProps {
   title: string;
@@ -20,9 +21,18 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
 }) => {
   return (
     <div className="bg-red dark:bg-gray-800 rounded-2xl shadow-md overflow-hidden border border-gray-200 dark:border-gray-700">
-      <img src={imageUrl} alt={title} className="w-full h-48 object-cover" />
+      <Image
+        src={imageUrl}
+        alt={title}
+        width={600}
+        height={192}
+        className="w-full h-48 object-cover"
+        priority
+      />
       <div className="p-4">
-        <h3 className="text-xl font-bold mb-2 text-gray-900 dark:text-white">{title}</h3>
+        <h3 className="text-xl font-bold mb-2 text-gray-900 dark:text-white">
+          {title}
+        </h3>
         <p className="text-black dark:text-gray-300 mb-4">{description}</p>
         <div className="flex flex-wrap gap-2 mb-4">
           {techStack.map((tech) => (
