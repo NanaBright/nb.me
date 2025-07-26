@@ -18,7 +18,7 @@ export default function Contact() {
                         <strong>Email:</strong> <a href="mailto:nanabryte.nb@gmail.com" className="underline hover:text-gray-300 transition-colors">nanabryte.nb@gmail.com</a>
                     </li>
                     <li className="text-sm">
-                        <strong>Phone:</strong> <a href="tel:+23359541016" className="underline hover:text-gray-300 transition-colors">+23359541016</a>
+                        <strong>Phone:</strong> <a href="tel:+233595410162" className="underline hover:text-gray-300 transition-colors">+233595410162</a>
                     </li>
                     <li className="text-sm">
                         <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/bright-yanchirah-88a54b123/" target="_blank" rel="noopener noreferrer" className="underline hover:text-gray-300 transition-colors">Bright Yanchirah</a>
