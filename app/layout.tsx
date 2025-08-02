@@ -8,6 +8,11 @@ export const metadata = {
   description: 'Full Stack Developer specializing in React, Next.js, and Node.js',
 }
 
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+}
+
 export default function RootLayout({
   children,
 }: {

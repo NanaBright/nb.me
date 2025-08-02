@@ -175,54 +175,55 @@ export default function Projects() {
     }
 
     return (
-        <main className="bg-black min-h-screen text-white p-8">
+        <main className="bg-black min-h-screen text-white">
             <Nav />
-            <div className="max-w-7xl mx-auto">
-                <h1 className="text-4xl font-bold mb-4 mt-20">My Projects</h1>
-                <p className="text-gray-300 mb-12 text-lg">
-                    A showcase of my work across web development, blockchain, mobile apps, and business solutions.
-                </p>
+            <div className="px-4 md:px-8 py-8">
+                <div className="max-w-7xl mx-auto">
+                    <h1 className="text-3xl md:text-4xl font-bold mb-4 mt-16 md:mt-20">My Projects</h1>
+                    <p className="text-gray-300 mb-8 md:mb-12 text-base md:text-lg">
+                        A showcase of my work across web development, blockchain, mobile apps, and business solutions.
+                    </p>
 
-                {Object.entries(groupedProjects).map(([category, categoryProjects]) => (
-                    <div key={category} className="mb-16">
-                        <h2 className="text-2xl font-bold mb-8 flex items-center gap-3">
-                            <div className={`w-1 h-8 ${categoryConfig[category as keyof typeof categoryConfig]?.color.replace('border-', 'bg-')}`}></div>
-                            {category}
-                            <span className="text-sm font-normal text-gray-400">({categoryProjects.length})</span>
-                        </h2>
-                        
-                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                            {categoryProjects.map((project, index) => (
-                                <div 
-                                    key={index} 
-                                    className={`border-2 ${categoryConfig[category as keyof typeof categoryConfig]?.color} rounded-xl p-6 ${categoryConfig[category as keyof typeof categoryConfig]?.bgColor} backdrop-blur-sm hover:shadow-lg transition-all duration-300`}
-                                >
-                                    <div className="flex justify-between items-start mb-4">
-                                        <h3 className="text-xl font-bold text-black">{project.name}</h3>
-                                        <span className={`px-3 py-1 rounded-full text-xs font-medium ${getStatusColor(project.status)}`}>
-                                            {project.status}
-                                        </span>
-                                    </div>
-                                    
-                                    <p className="text-black mb-4 leading-relaxed">{project.description}</p>
-                                    
-                                    <div className="mb-4">
-                                        <h4 className="text-sm font-semibold text-black mb-2">Key Features:</h4>
-                                        <div className="flex flex-wrap gap-2">
-                                            {project.features.map((feature, featureIndex) => (
-                                                <span 
-                                                    key={featureIndex}
-                                                    className="text-xs bg-white/10 text-black px-2 py-1 rounded-md"
-                                                >
-                                                    {feature}
-                                                </span>
-                                            ))}
+                    {Object.entries(groupedProjects).map(([category, categoryProjects]) => (
+                        <div key={category} className="mb-12 md:mb-16">
+                            <h2 className="text-xl md:text-2xl font-bold mb-6 md:mb-8 flex items-center gap-3">
+                                <div className={`w-1 h-6 md:h-8 ${categoryConfig[category as keyof typeof categoryConfig]?.color.replace('border-', 'bg-')}`}></div>
+                                {category}
+                                <span className="text-xs md:text-sm font-normal text-gray-400">({categoryProjects.length})</span>
+                            </h2>
+                            
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
+                                {categoryProjects.map((project, index) => (
+                                    <div 
+                                        key={index} 
+                                        className={`border-2 ${categoryConfig[category as keyof typeof categoryConfig]?.color} rounded-xl p-4 md:p-6 ${categoryConfig[category as keyof typeof categoryConfig]?.bgColor} backdrop-blur-sm hover:shadow-lg transition-all duration-300`}
+                                    >
+                                        <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-4 gap-2">
+                                            <h3 className="text-lg md:text-xl font-bold text-black">{project.name}</h3>
+                                            <span className={`px-2 md:px-3 py-1 rounded-full text-xs font-medium self-start ${getStatusColor(project.status)}`}>
+                                                {project.status}
+                                            </span>
+                                        </div>
+                                        
+                                        <p className="text-black mb-4 leading-relaxed text-sm md:text-base">{project.description}</p>
+                                        
+                                        <div className="mb-4">
+                                            <h4 className="text-sm font-semibold text-black mb-2">Key Features:</h4>
+                                            <div className="flex flex-wrap gap-1 md:gap-2">
+                                                {project.features.map((feature, featureIndex) => (
+                                                    <span 
+                                                        key={featureIndex}
+                                                        className="text-xs bg-white/10 text-black px-2 py-1 rounded-md"
+                                                    >
+                                                        {feature}
+                                                    </span>
+                                                ))}
                                         </div>
                                     </div>
                                     
                                     <div className="mb-4">
                                         <h4 className="text-sm font-semibold text-black mb-2">Tech Stack:</h4>
-                                        <div className="flex flex-wrap gap-2">
+                                        <div className="flex flex-wrap gap-1 md:gap-2">
                                             {project.techStack.map((tech, techIndex) => (
                                                 <span 
                                                     key={techIndex}
@@ -239,7 +240,7 @@ export default function Projects() {
                                             <Link 
                                                 href={project.link.startsWith('http') ? project.link : `https://${project.link}`}
                                                 target="_blank"
-                                                className="text-blue-400 hover:text-blue-300 underline transition-colors"
+                                                className="text-blue-400 hover:text-blue-300 underline transition-colors text-sm md:text-base"
                                             >
                                                 {project.link.startsWith('http') ? 'View Project' : project.link}
                                             </Link>
@@ -251,17 +252,18 @@ export default function Projects() {
                     </div>
                 ))}
 
-                <div className="mt-16 text-center">
-                    <h3 className="text-2xl font-bold mb-4">More Projects Coming Soon!</h3>
-                    <p className="text-gray-300 mb-8">
+                <div className="mt-12 md:mt-16 text-center">
+                    <h3 className="text-xl md:text-2xl font-bold mb-4">More Projects Coming Soon!</h3>
+                    <p className="text-gray-300 mb-6 md:mb-8 text-sm md:text-base">
                         I&apos;m always working on new exciting projects. Check back regularly for updates.
                     </p>
                     <Link 
                         href="/" 
-                        className="inline-block bg-white text-black px-6 py-3 rounded-lg font-semibold hover:bg-gray-200 transition-colors"
+                        className="inline-block bg-white text-black px-4 md:px-6 py-2 md:py-3 rounded-lg font-semibold hover:bg-gray-200 transition-colors text-sm md:text-base"
                     >
                         Back to Home
                     </Link>
+                </div>
                 </div>
             </div>
         </main>

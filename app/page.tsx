@@ -48,20 +48,20 @@ export default function Home() {
         >
           {/* Background Circle */}
           <motion.div
-            className={`absolute right-[-20%] top-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-gradient-to-br ${sections[currentSection].color} opacity-80 blur-3xl`}
+            className={`absolute right-[-40%] md:right-[-20%] top-1/2 -translate-y-1/2 w-[300px] h-[300px] md:w-[600px] md:h-[600px] rounded-full bg-gradient-to-br ${sections[currentSection].color} opacity-80 blur-3xl`}
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
             transition={{ duration: 0.8 }}
           />
 
           {/* Content */}
-          <div className="container mx-auto px-8 flex justify-between items-center">
+          <div className="container mx-auto px-4 md:px-8 flex justify-between items-center">
             <div className="max-w-2xl">
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2 }}
-                className="text-xl mb-4"
+                className="text-lg md:text-xl mb-4"
               >
                 {`${currentSection + 1}/0${sections.length}`}
               </motion.p>
@@ -69,7 +69,7 @@ export default function Home() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3 }}
-                className="text-7xl font-light mb-2"
+                className="text-4xl md:text-6xl lg:text-7xl font-light mb-2"
               >
                 {sections[currentSection].title}
               </motion.h1>
@@ -77,7 +77,7 @@ export default function Home() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.4 }}
-                className="text-8xl font-bold mb-6"
+                className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6"
               >
                 {sections[currentSection].subtitle}
               </motion.h2>
@@ -85,7 +85,7 @@ export default function Home() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.5 }}
-                className="text-xl text-gray-300 mb-8 max-w-lg"
+                className="text-base md:text-xl text-gray-300 mb-8 max-w-lg"
               >
                 {sections[currentSection].description}
               </motion.p>
@@ -94,10 +94,10 @@ export default function Home() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.6 }}
                 onClick={nextSection}
-                className="flex items-center gap-2 text-lg hover:text-gray-300 transition-colors"
+                className="flex items-center gap-2 text-base md:text-lg hover:text-gray-300 transition-colors"
               >
                 See More
-                <ChevronRight className="w-5 h-5" />
+                <ChevronRight className="w-4 h-4 md:w-5 md:h-5" />
               </motion.button>
             </div>
 
