@@ -1,41 +1,6 @@
-/* eslint-disable react/no-unescaped-entities */
-import Link from "next/link"
-import { Nav } from "@/components/nav"
-
+import Link from 'next/link'
+import { ContactBand, CVLink } from '@/components/portfolio'
+export const metadata = { title: 'About', description: 'Bright Yanchirah, a senior full-stack software engineer with 7+ years of experience across product development and business operations.', alternates: { canonical: '/about' } }
 export default function About() {
-  return (
-    <main className="bg-black min-h-screen text-white relative overflow-hidden">
-      
-      <Nav />
-
-      {/* Glowing deep dark green circle */}
-      <div className="absolute top-1/4 right-[-100px] md:right-[-150px] w-[300px] h-[300px] md:w-[500px] md:h-[500px] rounded-full bg-[#004d00] opacity-30 blur-3xl z-0"></div>
-
-      <div className="relative mt-16 md:mt-20 max-w-screen-lg mx-auto z-10 px-4 md:px-8">
-        <section className="max-w-3xl mx-auto p-4 md:p-6">
-          <h2 className="text-2xl md:text-3xl font-bold mb-4">About Me</h2>
-          <p className="text-white dark:text-white mb-4 text-sm md:text-base leading-relaxed">
-            I'm a full-stack developer with experience in building modern web applications
-            using Next.js, Laravel, and Node.js. I enjoy solving real-world problems and
-            have developed tools for ride-hailing drivers, inventory managers, and
-            e-commerce platforms.
-          </p>
-          <p className="text-white dark:text-white mb-4 text-sm md:text-base leading-relaxed">
-            I'm currently seeking remote or hybrid roles where I can contribute to product
-            teams, build scalable applications, and grow as a developer. I'm also open to
-            freelance collaborations.
-          </p>
-          <p className="text-white dark:text-white text-sm md:text-base leading-relaxed">
-            Outside of coding, I help run my family's business and enjoy learning about
-            startups, tech ecosystems, and productivity tools.
-          </p>
-        </section>
-        <div className="px-4 md:px-6">
-          <Link href="/" className="text-sm underline hover:text-gray-300 transition-colors">
-            Back to Home
-          </Link>
-        </div>
-      </div>
-    </main>
-  )
+  return <main id="main-content"><section className="page-intro wrap"><p className="eyebrow">THE PERSON BEHIND THE WORK</p><h1>Engineer by trade.<br /><span className="serif accent">Builder by nature.</span></h1><p className="intro-copy">I’m Bright Yanchirah, a senior full-stack software engineer based in Ghana. I build software around the people, processes, and decisions it needs to support.</p></section><section className="wrap case-section"><p className="eyebrow">MY BACKGROUND</p><div><p className="large-copy">7+ years turning requirements into working products.</p><p className="muted">My work spans enterprise applications, business discovery, inventory systems, commerce, and mobile products. I began working on M-HUB in 2017 and served as CTO during its early startup phase, before the company’s registration in 2022. Alongside software development, I have worked in business management and IT operations. That experience keeps the practical consequences of technical decisions close to the work.</p><p className="muted">I’m comfortable moving between interfaces, APIs, data models, integrations, and deployment. Across projects, the aim stays consistent: understand the problem, make sound implementation choices, and deliver something useful.</p><CVLink /></div></section><section className="wrap case-section"><p className="eyebrow">WHAT I BRING</p><div className="principles"><article><h2>Business context</h2><p className="muted">Experience running operations informs how I think about the workflows software needs to serve.</p></article><article><h2>Technical ownership</h2><p className="muted">From stakeholder requirements to implementation, testing, and deployment, I work across the product’s full lifecycle.</p></article><article><h2>Practical engineering</h2><p className="muted">Permissions, data correctness, maintainability, and the experience of using a product matter alongside its features.</p></article></div></section><section className="wrap case-section"><p className="eyebrow">EDUCATION & EXPLORATION</p><div><h2>A foundation in mathematics.</h2><p className="muted">Bachelor of Science in Mathematics, University of Energy and Natural Resources (UENR), 2013–2017.</p><p className="muted">I also build developer tools. Ludwig is my open-source exploration of a Python framework for web, desktop, and IoT development.</p><Link href="/projects/ludwig" className="text-link">Explore Ludwig ↗</Link></div></section><ContactBand /></main>
 }

@@ -1,416 +1,563 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bright Yanchirah - CV</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Georgia', 'Times New Roman', serif;
-            background: #ffffff;
-            color: #2d3748;
-            line-height: 1.6;
-            font-size: 11pt;
-            max-width: 210mm;
-            margin: 0 auto;
-            padding: 20mm;
-        }
-
-        .header {
-            text-align: center;
-            margin-bottom: 30px;
-            padding-bottom: 20px;
-            border-bottom: 2px solid #e2e8f0;
-        }
-
-        .header h1 {
-            font-size: 28pt;
-            font-weight: 700;
-            color: #1a202c;
-            margin-bottom: 8px;
-            letter-spacing: -0.5px;
-        }
-
-        .header .title {
-            font-size: 14pt;
-            color: #4a5568;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-
-        .contact-info {
-            font-size: 10pt;
-            color: #718096;
-            line-height: 1.4;
-        }
-
-        .contact-info a {
-            color: #3182ce;
-            text-decoration: none;
-        }
-
-        .contact-info a:hover {
-            text-decoration: underline;
-        }
-
-        .section {
-            margin-bottom: 25px;
-            page-break-inside: avoid;
-        }
-
-        .section h2 {
-            font-size: 16pt;
-            font-weight: 700;
-            color: #1a202c;
-            margin-bottom: 12px;
-            padding-bottom: 6px;
-            border-bottom: 1px solid #e2e8f0;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-
-        .section h3 {
-            font-size: 12pt;
-            font-weight: 600;
-            color: #2d3748;
-            margin-bottom: 6px;
-            margin-top: 15px;
-        }
-
-        .section p {
-            margin-bottom: 10px;
-            text-align: justify;
-        }
-
-        .job-title {
-            font-weight: 600;
-            color: #1a202c;
-            font-size: 11pt;
-        }
-
-        .company {
-            font-weight: 700;
-            color: #3182ce;
-            font-size: 12pt;
-        }
-
-        .duration {
-            color: #718096;
-            font-style: italic;
-            font-size: 10pt;
-        }
-
-        .job-description {
-            margin-left: 15px;
-            margin-top: 8px;
-        }
-
-        .job-description ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
-
-        .job-description li {
-            margin-bottom: 4px;
-            padding-left: 15px;
-            position: relative;
-        }
-
-        .job-description li:before {
-            content: "•";
-            color: #3182ce;
-            font-weight: bold;
-            position: absolute;
-            left: 0;
-        }
-
-        .skills-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 8px;
-        }
-
-        .skill-category {
-            display: flex;
-            align-items: flex-start;
-            margin-bottom: 6px;
-        }
-
-        .skill-label {
-            font-weight: 600;
-            color: #1a202c;
-            min-width: 180px;
-            flex-shrink: 0;
-        }
-
-        .skill-items {
-            color: #4a5568;
-            flex: 1;
-        }
-
-        .projects-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 8px;
-            margin-top: 10px;
-        }
-
-        .project-item {
-            display: flex;
-            align-items: center;
-            font-size: 10pt;
-        }
-
-        .project-name {
-            font-weight: 600;
-            color: #1a202c;
-            margin-right: 8px;
-        }
-
-        .project-link {
-            color: #3182ce;
-            text-decoration: none;
-            font-size: 9pt;
-        }
-
-        .project-link:hover {
-            text-decoration: underline;
-        }
-
-        .summary-text {
-            font-size: 11pt;
-            text-align: justify;
-            color: #4a5568;
-            line-height: 1.7;
-        }
-
-        .education-item {
-            margin-bottom: 8px;
-        }
-
-        .degree {
-            font-weight: 600;
-            color: #1a202c;
-        }
-
-        .institution {
-            color: #4a5568;
-        }
-
-        .open-to-list {
-            list-style-type: none;
-            padding-left: 0;
-        }
-
-        .open-to-list li {
-            margin-bottom: 4px;
-            padding-left: 15px;
-            position: relative;
-            color: #4a5568;
-        }
-
-        .open-to-list li:before {
-            content: "▸";
-            color: #3182ce;
-            font-weight: bold;
-            position: absolute;
-            left: 0;
-        }
-
-        .footer {
-            text-align: center;
-            margin-top: 30px;
-            padding-top: 20px;
-            border-top: 1px solid #e2e8f0;
-            font-size: 10pt;
-            color: #718096;
-        }
-
-        .footer a {
-            color: #3182ce;
-            text-decoration: none;
-            font-weight: 600;
-        }
-
-        /* Print optimizations */
-        @media print {
-            body {
-                padding: 15mm;
-                font-size: 10pt;
-            }
-            
-            .header h1 {
-                font-size: 24pt;
-            }
-            
-            .section h2 {
-                font-size: 14pt;
-            }
-            
-            .projects-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bright Yanchirah — Senior Full-Stack Software Engineer & Solutions Architect CV</title>
+  <meta name="description" content="Senior Full-Stack Software Engineer with 7+ years of experience across web, mobile, distributed systems, and early startup CTO leadership." />
+  <style>
+    :root {
+      --navy: #0E2A3F;
+      --accent: #0D5C75;
+      --ink: #1A2329;
+      --muted: #4A5B66;
+      --bg: #F8FAFC;
+      --card-bg: #FFFFFF;
+      --border: #E2E8F0;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--ink);
+      line-height: 1.5;
+      padding: 32px 16px;
+    }
+    .cv-container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      padding: 48px;
+      border-radius: 8px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+      border-top: 5px solid var(--navy);
+    }
+    header {
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 20px;
+      margin-bottom: 24px;
+    }
+    h1 {
+      color: var(--navy);
+      font-size: 2.2rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+    .headline {
+      color: var(--accent);
+      font-size: 1.15rem;
+      font-weight: 600;
+      margin-top: 4px;
+      margin-bottom: 12px;
+    }
+    .contact-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px 18px;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+    .contact-bar a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .contact-bar a:hover {
+      text-decoration: underline;
+    }
+    .download-actions {
+      margin: 16px 0;
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .btn {
+      display: inline-block;
+      background: var(--navy);
+      color: #fff;
+      padding: 8px 16px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 0.85rem;
+      font-weight: 600;
+      transition: background 0.2s;
+    }
+    .btn:hover {
+      background: var(--accent);
+    }
+    .btn-outline {
+      background: transparent;
+      color: var(--navy);
+      border: 1px solid var(--navy);
+    }
+    .btn-outline:hover {
+      background: #f1f5f9;
+    }
+    section {
+      margin-bottom: 24px;
+    }
+    h2 {
+      color: var(--navy);
+      font-size: 1.05rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      border-bottom: 1.5px solid var(--border);
+      padding-bottom: 4px;
+      margin-bottom: 12px;
+    }
+    h3.sub-section-title {
+      color: var(--accent);
+      font-size: 0.98rem;
+      font-weight: 700;
+      margin-top: 16px;
+      margin-bottom: 10px;
+    }
+    .entry {
+      margin-bottom: 14px;
+    }
+    .entry-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      margin-bottom: 2px;
+    }
+    .entry-title {
+      font-weight: 700;
+      font-size: 1rem;
+      color: var(--ink);
+    }
+    .entry-meta {
+      color: var(--muted);
+      font-size: 0.85rem;
+      font-style: italic;
+    }
+    .entry-sub {
+      color: var(--muted);
+      font-size: 0.85rem;
+      margin-bottom: 6px;
+    }
+    ul {
+      padding-left: 20px;
+      margin-bottom: 8px;
+    }
+    li {
+      font-size: 0.92rem;
+      margin-bottom: 3px;
+    }
+    .skill-item {
+      font-size: 0.92rem;
+      margin-bottom: 4px;
+    }
+    .skill-label {
+      font-weight: 700;
+      color: var(--ink);
+    }
+    @media print {
+      body {
+        background: #fff;
+        padding: 0;
+      }
+      .cv-container {
+        box-shadow: none;
+        padding: 0;
+        border-top: none;
+      }
+      .download-actions {
+        display: none;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="header">
-        <h1>Bright Yanchirah</h1>
-        <div class="title">Full Stack Developer | JavaScript, Laravel, React, Node.js</div>
-        <div class="contact-info">
-            Accra, Ghana • +233 595 410 162 • nanabryte.n@gmail.com<br>
-            GitHub: <a href="https://github.com/NanaBright">NanaBright</a> • Portfolio: <a href="https://nb-me.vercel.app">nb-me.vercel.app</a>
-        </div>
-    </div>
+  <div class="cv-container">
+    <header>
+      <h1>Bright Yanchirah</h1>
+      <div class="headline">Senior Full-Stack Software Engineer & Solutions Architect</div>
+      <div class="contact-bar">
+        <span>Accra, Ghana (Open to Global Remote & Hybrid)</span>
+        <span><a href="tel:+233595410162">+233 595 410 162</a></span>
+        <span><a href="mailto:nanabryte.nb@gmail.com">nanabryte.nb@gmail.com</a></span>
+        <span><a href="https://github.com/NanaBright">github.com/NanaBright</a></span>
+        <span><a href="https://www.linkedin.com/in/bright-yanchirah-88a54b123/">linkedin.com/in/bright-yanchirah-88a54b123</a></span>
+        <span><a href="https://nb-me.vercel.app">nb-me.vercel.app</a></span>
+      </div>
+      <div class="download-actions">
+        <a class="btn" href="/Bright_Yanchirah_Senior_Full_Stack_Engineer_CV.pdf" download>Download PDF CV</a>
+        <a class="btn btn-outline" href="/Bright_Yanchirah_Senior_Full_Stack_Engineer_CV.docx" download>Download Word (DOCX)</a>
+      </div>
+    </header>
 
-    <div class="section">
-        <h2>Professional Summary</h2>
-        <p class="summary-text">
-            Full Stack Developer passionate about building tools that solve real problems in African markets. Proven success shipping Laravel, React, and mobile apps for businesses across healthcare, retail, and fintech sectors. Strong self-starter with a track record of remote work, real-world impact, and an entrepreneurial mindset.
-        </p>
-    </div>
+    <section>
+      <h2>Executive Summary</h2>
+      <p style="font-size: 0.94rem; text-align: justify;">Senior Full-Stack Software Engineer and Solutions Architect with 7+ years of experience engineering high-performance web applications, distributed APIs, microservices, and cross-platform desktop and mobile systems. Proven track record leading products from concept to scale, including early startup Chief Technology Officer (CTO) experience and enterprise full-stack development across fintech, e-commerce, and logistics. Creator of 26+ production applications and developer platforms (such as Slatetrends, FlowStock ERP, and Ludwig Framework). Expert in modern TypeScript, React, Next.js, Node.js, Laravel, Python, Rust, PostgreSQL, Docker, and CI/CD pipelines, with a deep focus on architectural resilience, automated testing, and security compliance.</p>
+    </section>
 
-    <div class="section">
-        <h2>Key Skills</h2>
-        <div class="skills-grid">
-            <div class="skill-category">
-                <div class="skill-label">Languages & Frameworks:</div>
-                <div class="skill-items">JavaScript, TypeScript, Laravel, PHP, React, Vue.js, Node.js, C#, .NET</div>
-            </div>
-            <div class="skill-category">
-                <div class="skill-label">Mobile & Desktop:</div>
-                <div class="skill-items">React Native, Expo, WinForms</div>
-            </div>
-            <div class="skill-category">
-                <div class="skill-label">Databases & Backend:</div>
-                <div class="skill-items">PostgreSQL, MySQL, SQLite, MongoDB, Express, Firebase, REST APIs</div>
-            </div>
-            <div class="skill-category">
-                <div class="skill-label">Dev Tools & Others:</div>
-                <div class="skill-items">Tailwind CSS, Docker, Git, JWT Auth, PDF Generation, Arduino, CLI Tools</div>
-            </div>
-        </div>
-    </div>
+    <section>
+      <h2>Core Competencies & Technical Skills</h2>
+      <div class="skill-item"><span class="skill-label">Languages:</span> JavaScript (ES6+), TypeScript, PHP (8.2+), Python (3.8+), Rust, C#, SQL, HTML5, CSS3/Sass, Solidity</div>
+      <div class="skill-item"><span class="skill-label">Frontend & Mobile:</span> React.js (18/19), Next.js (14/15 App Router/RSC), Vue.js (3), React Native, Expo, Redux Toolkit, Tailwind CSS, Shadcn/ui, Electron, WinForms</div>
+      <div class="skill-item"><span class="skill-label">Backend & Distributed Systems:</span> Node.js, Express.js, NestJS, Laravel (11/12), RESTful APIs, GraphQL, WebSockets, Microservices, SOCKS5, TLS 1.3, Tokio, Serverless</div>
+      <div class="skill-item"><span class="skill-label">Databases & Caching:</span> PostgreSQL, MySQL, MongoDB, SQLite, Redis, Prisma ORM, Eloquent ORM, Database Indexing, Query Optimization, Data Modeling</div>
+      <div class="skill-item"><span class="skill-label">DevOps, Cloud & Infrastructure:</span> Docker, Docker Compose, CI/CD (GitHub Actions), AWS, DigitalOcean, Vercel, Linux/Unix Administration, Nginx, Shell Scripting, IT Operations</div>
+      <div class="skill-item"><span class="skill-label">Security, Payments & Architecture:</span> JWT, OAuth 2.0, Role-Based Access Control (RBAC), Mobile Money (MoMo) APIs, Paystack, Flutterwave, Stripe, GRA Tax Compliance, Web3/Ethers.js, Agile/Scrum</div>
+    </section>
 
-    <div class="section">
-        <h2>Professional Experience</h2>
-        
-        <div class="job-title">
-            <span class="company">Afria Technologies</span> (Remote)<br>
-            <span class="job-title">Full Stack Developer</span> • <span class="duration">2023 – Present</span>
+    <section>
+      <h2>Professional Experience</h2>
+      <div class="entry">
+        <div class="entry-header">
+          <div class="entry-title">Senior Full-Stack Developer & IT Operations Engineer | Kwarleyz Group</div>
+          <div class="entry-meta">2025 - Present | Accra, Ghana (Full-Time)</div>
         </div>
-        <div class="job-description">
-            <ul>
-                <li>XCRO.io: Fintech platform for risk mitigation using smart contracts</li>
-                <li>1957 Autozone: Spare parts ecommerce for local market (Laravel + Vue)</li>
-                <li>NDAuth: Authentication layer built with Laravel and ClerkAuth</li>
-            </ul>
-        </div>
-
-        <div class="job-title">
-            <span class="company">M-HUB</span> (Hybrid)<br>
-            <span class="job-title">Full Stack Developer</span> • <span class="duration">2019 – Present</span>
-        </div>
-        <div class="job-description">
-            <ul>
-                <li>Farmekeio Hub: Pharmacy dashboard with data integrations and secure role-based access</li>
-                <li>TRYST Platform: Real-time event polling and management system with admin tools</li>
-            </ul>
-        </div>
-
-        <div class="job-title">
-            <span class="company">Yanestee Ventures</span> (Berekum)<br>
-            <span class="job-title">Manager & Software Builder</span> • <span class="duration">2020 – Present</span>
-        </div>
-        <div class="job-description">
-            <ul>
-                <li>Oversee operations of family-run cold store</li>
-                <li>Built custom inventory systems and sales tracking tools for daily business efficiency</li>
-                <li>FlowStock: Laravel-based inventory system with real-time tracking, sales management, low stock alerts, and role-based multi-user support</li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="section">
-        <h2>Highlight Projects</h2>
-        <div class="projects-grid">
-            <div class="project-item">
-                <span class="project-name">Ludwig ⚙️</span>
-                <a href="https://github.com/NanaBright/ludwig" class="project-link">GitHub</a>
-            </div>
-            <div class="project-item">
-                <span class="project-name">Eldo</span>
-                <a href="https://eldo-five.vercel.app/" class="project-link">Live</a>
-            </div>
-            <div class="project-item">
-                <span class="project-name">TRYST Platform</span>
-                <a href="https://tryst-psi.vercel.app" class="project-link">Live</a>
-            </div>
-            <div class="project-item">
-                <span class="project-name">Slatetnd</span>
-                <a href="https://slatetnd.vercel.app" class="project-link">Live</a>
-            </div>
-            <div class="project-item">
-                <span class="project-name">Ghana TaxFlow API</span>
-                <a href="https://tax-api-dashboard.vercel.app" class="project-link">Live</a>
-            </div>
-            <div class="project-item">
-                <span class="project-name">1957 Autozone</span>
-                <a href="https://1957autozone.com" class="project-link">Live</a>
-            </div>
-            <div class="project-item">
-                <span class="project-name">DriveProfit</span>
-                <a href="https://expo.dev/accounts/nana-skerry/projects/driveprofit" class="project-link">Expo</a>
-            </div>
-            <div class="project-item">
-                <span class="project-name">WeatherWave</span>
-                <a href="https://weather-wave-chi.vercel.app" class="project-link">Live</a>
-            </div>
-            <div class="project-item">
-                <span class="project-name">FlowStock</span>
-                <a href="https://flowstock.lippty.com" class="project-link">Live</a>
-            </div>
-            <div class="project-item">
-                <span class="project-name">Contact Management CRUD</span>
-                <a href="https://github.com/NanaBright/ContactCRUD" class="project-link">GitHub</a>
-            </div>
-            <div class="project-item">
-                <span class="project-name">XCRO.io</span>
-                <a href="https://xcro.io" class="project-link">Live</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="section">
-        <h2>Education</h2>
-        <div class="education-item">
-            <div class="degree">BSc Mathematics</div>
-            <div class="institution">University of Energy and Natural Resources</div>
-        </div>
-        <div class="education-item">
-            <div class="degree">ALX Software Engineering Program</div>
-            <div class="institution">Dropped out with 3 months left to completion</div>
-        </div>
-    </div>
-
-    <div class="section">
-        <h2>Open to</h2>
-        <ul class="open-to-list">
-            <li>Remote Full Stack / Backend Roles</li>
-            <li>Platform Engineering</li>
-            <li>Developer Tools / API Companies</li>
-            <li>Fintech & Business Infrastructure Teams</li>
+        <ul>
+          <li>Direct full-stack software development and enterprise IT operations across corporate business units, ensuring high availability, system resilience, and data integrity.</li>
+          <li>Architect scalable internal web applications and secure API services using Node.js, NestJS, React, and TypeScript, automating cross-departmental business workflows.</li>
+          <li>Manage IT infrastructure, system virtualization, and deployment pipelines utilizing Docker and CI/CD automation to optimize operational efficiency.</li>
+          <li>Integrate secure financial gateways and enterprise third-party services (including Stripe payment processing), enforcing robust role-based access controls and audit logging.</li>
+          <li>Collaborate with executive stakeholders to align technology initiatives with business objectives while maintaining stringent operational security standards.</li>
         </ul>
-    </div>
+      </div>
+      <div class="entry">
+        <div class="entry-header">
+          <div class="entry-title">Senior Full-Stack Developer | Afria Technologies</div>
+          <div class="entry-meta">2023 - Present | Remote (Full-Time)</div>
+        </div>
+        <ul>
+          <li>Engineer and maintain high-traffic enterprise React.js and TypeScript applications for corporate and government clients, ensuring responsive UI and optimal core web vitals.</li>
+          <li>Lead frontend architecture and design systems while engineering backend microservices in Node.js and Laravel to support high concurrent user loads.</li>
+          <li>Architected and delivered key modules of Chekbuk / XCRO.io, an enterprise risk-mitigation and dynamic escrow platform featuring Web3 smart contract integration.</li>
+          <li>Implement automated testing suites using Jest and React Testing Library, reducing production regression rates and accelerating deployment cycles.</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <div class="entry-header">
+          <div class="entry-title">Senior Software Engineer & Former Chief Technology Officer (CTO) | M-HUB Technology</div>
+          <div class="entry-meta">2017 - Present | Hybrid (Full-Time)</div>
+        </div>
+        <ul>
+          <li>Served as Chief Technology Officer (CTO) during M-HUB's early startup and incubation phase from 2017 prior to formal company incorporation in 2022, establishing technical roadmaps, architecture, and developer standards.</li>
+          <li>Designed and launched the official M-HUB corporate web platform (m-hubtechnology.com), presenting technology consulting services and digital academy initiatives.</li>
+          <li>Lead end-to-end full-stack engineering across client and internal products utilizing Next.js, Node.js, Express, and PostgreSQL, consistently delivering robust, responsive applications.</li>
+          <li>Direct cross-functional squads of engineers and UI/UX designers, championing API design standards, PostgreSQL query optimization, and Agile development practices.</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <div class="entry-header">
+          <div class="entry-title">Lead Software Builder & Operations Manager | Yanestee Ventures</div>
+          <div class="entry-meta">2020 - 2025 | Berekum, Ghana (Full-Time)</div>
+        </div>
+        <ul>
+          <li>Spearheaded commercial operations and built custom operational software systems that streamlined inventory tracking, sales reporting, and cash flow auditing.</li>
+          <li>Architected and deployed FlowStock, an end-to-end Laravel ERP and POS solution featuring real-time stock reconciliation, multi-store support, and automated reorder alerts.</li>
+          <li>Leveraged deep operational domain expertise to engineer bespoke software solutions that reduced shrinkage and boosted sales turnaround.</li>
+        </ul>
+      </div>
+    </section>
 
-    <div class="footer">
-        <strong>More Projects:</strong> <a href="https://nb-me.vercel.app">nb-me.vercel.app</a>
-    </div>
+    <section>
+      <h2>Key Achievements & Technical Impact</h2>
+      <ul>
+        <li>26+ Production Applications: Successfully architected, delivered, and maintained 26+ commercial applications and developer platforms across web, mobile, desktop, blockchain, and APIs.</li>
+        <li>Proven Technical Leadership: Combined hands-on engineering with executive startup leadership, having served as Chief Technology Officer (CTO) for M-HUB through its foundational years.</li>
+        <li>High-Impact African Market Solutions: Specialized in engineering resilient, offline-resilient, Mobile Money-integrated software solving acute market challenges in retail, fintech, tax compliance, and transit.</li>
+        <li>Comprehensive Technical Versatility: Demonstrated mastery across modern full-stack architectures (Next.js 15, React 19, TypeScript, Node.js, Laravel 11/12, Python, Rust, C#, PostgreSQL, Docker, CI/CD).</li>
+        <li>Open Source & Developer Tools: Authored Ludwig Framework and Laravel authentication starter kits to empower developers worldwide.</li>
+        <li>Enterprise Architecture & Operations: Directed full-stack development alongside critical IT operations, maintaining robust security, automated pipelines, and 99.9% uptime.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Selected Project Portfolio & Production Systems</h2>
+      <h3 class="sub-section-title">Featured Flagship Platforms & Products</h3>
+      <div class="entry">
+        <div class="entry-header">
+          <div class="entry-title">Slatetrends — National Business Discovery & Directory Platform — <a href="https://slatetrends.com" target="_blank" style="color:var(--accent); text-decoration:none; font-weight:600;">slatetrends.com &rarr;</a></div>
+        </div>
+        <div class="entry-sub"><strong>Stack:</strong> Next.js 15, React 19, PostgreSQL, Prisma ORM, Leaflet Maps, TypeScript, JWT, Cloudinary | <strong>Status:</strong> Active production platform with live search and verified business listings.</div>
+        <ul>
+          <li>Architected a mobile-first directory empowering discovery and direct engagement with verified businesses across Ghana.</li>
+          <li>Engineered owner management portal, business ownership claims, administrative verification workflows, and media management.</li>
+          <li>Built geospatial search with interactive Leaflet mapping, radius filtering, business categorization, and opening-hour validation.</li>
+          <li>Implemented high-coverage test suites verifying API authentication, role authorization, and PostgreSQL full-text search indexing.</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <div class="entry-header">
+          <div class="entry-title">M-HUB Technology Platform — Corporate Portal & Tech Academy Web Platform — <a href="https://m-hubtechnology.com/" target="_blank" style="color:var(--accent); text-decoration:none; font-weight:600;">m-hubtechnology.com &rarr;</a></div>
+        </div>
+        <div class="entry-sub"><strong>Stack:</strong> Next.js, TypeScript, Tailwind CSS, Vercel | <strong>Status:</strong> Live production corporate web platform.</div>
+        <ul>
+          <li>Created the flagship corporate web platform introducing M-HUB's software engineering services, tech consultancy, and academy programs.</li>
+          <li>Engineered responsive UI with modern typography, interactive program exploration, and high-conversion client intake flows.</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <div class="entry-header">
+          <div class="entry-title">FlowStock Pro — Enterprise Inventory & Desktop POS System</div>
+        </div>
+        <div class="entry-sub"><strong>Stack:</strong> Laravel 11, PHP 8.2, Electron 28, Tailwind CSS, MySQL, Docker, CI/CD | <strong>Status:</strong> Production-ready enterprise system with cross-platform desktop, web, and PWA capability.</div>
+        <ul>
+          <li>Engineered a full-featured ERP for retail, supermarkets, and distributors with offline-first desktop functionality via Electron.</li>
+          <li>Designed and implemented RESTful APIs secured with JWT for rapid barcode scanning, multi-branch inventory sync, Mobile Money (MoMo) payments, and thermal receipt generation.</li>
+          <li>Integrated Ghana Revenue Authority (GRA) tax compliance computation, audit logging, and automated replenishment alerts.</li>
+          <li>Configured automated CI/CD pipelines with GitHub Actions and Docker containerization for automated cross-platform builds.</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <div class="entry-header">
+          <div class="entry-title">FlowStock V2 — Cloud-Native Inventory & POS Platform for SMBs — <a href="https://flowstock-v2.vercel.app" target="_blank" style="color:var(--accent); text-decoration:none; font-weight:600;">flowstock-v2.vercel.app &rarr;</a></div>
+        </div>
+        <div class="entry-sub"><strong>Stack:</strong> Next.js 15, TypeScript, SQLite, Shadcn/ui, Tailwind CSS, WebSockets, Vercel | <strong>Status:</strong> Customer ready with 15+ modules complete and automated CI/CD.</div>
+        <ul>
+          <li>Rebuilt using Next.js 15 App Router and TypeScript with server-side rendering and a real-time analytics dashboard powered by WebSockets.</li>
+          <li>Features POS checkout, inventory reconciliation, granular role permissions, and financial reporting.</li>
+          <li>Automated deployment workflows via GitHub Actions and established unit/integration testing with Jest and React Testing Library.</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <div class="entry-header">
+          <div class="entry-title">FlowStock — Laravel ERP & Inventory Management System — <a href="https://flowstock.lippty.com" target="_blank" style="color:var(--accent); text-decoration:none; font-weight:600;">flowstock.lippty.com &rarr;</a></div>
+        </div>
+        <div class="entry-sub"><strong>Stack:</strong> Laravel 11, PHP 8.2, MySQL, Livewire, Tailwind CSS | <strong>Status:</strong> Deployed and actively powering commercial operations.</div>
+        <ul>
+          <li>Powers commercial enterprises with real-time inventory tracking, multi-branch reconciliation, and POS sales workflows.</li>
+          <li>Implemented Mobile Money (MoMo) payment integration, audit trails, and automated low-stock notifications.</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <div class="entry-header">
+          <div class="entry-title">TaxFlow Ghana — Automated Tax Calculation & Compliance Platform — <a href="https://tax-api-dashboard.vercel.app" target="_blank" style="color:var(--accent); text-decoration:none; font-weight:600;">tax-api-dashboard.vercel.app &rarr;</a></div>
+        </div>
+        <div class="entry-sub"><strong>Stack:</strong> Next.js 15, Express.js, PostgreSQL, JWT, Node.js | <strong>Status:</strong> Production-ready platform and public developer API.</div>
+        <ul>
+          <li>Built a specialized engine and interactive dashboard for Ghanaian tax computation (VAT, PAYE, NHIL, GETFund, COVID Levy).</li>
+          <li>Provides REST APIs and exportable compliance reports tailored for SMEs and accounting firms.</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <div class="entry-header">
+          <div class="entry-title">Chekbuk / XCRO.io — Institutional Risk Mitigation & Smart Escrow Platform — <a href="https://chekbuk.com" target="_blank" style="color:var(--accent); text-decoration:none; font-weight:600;">chekbuk.com &rarr;</a></div>
+        </div>
+        <div class="entry-sub"><strong>Stack:</strong> React.js, Web3, Smart Contracts, Solidity, Node.js | <strong>Status:</strong> Live production platform serving fintech transactions.</div>
+        <ul>
+          <li>Engineered frontend architecture and smart contract interactions for dynamic transaction risk mitigation.</li>
+          <li>Supports autonomous multi-sig escrow for high-value transactions (real estate, commodities, cross-border trade).</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <div class="entry-header">
+          <div class="entry-title">PrivyVPN — High-Performance Personal VPN & SOCKS5 Proxy</div>
+        </div>
+        <div class="entry-sub"><strong>Stack:</strong> Rust (Tokio), Python, SOCKS5, TLS 1.3, Async I/O | <strong>Status:</strong> Production ready with 15/15 integration tests passing.</div>
+        <ul>
+          <li>Architected an asynchronous VPN daemon in Rust utilizing Tokio for zero-cost async concurrency and TLS 1.3 encryption.</li>
+          <li>Engineered Python management CLI and web dashboard controlling 8 distributed server endpoints with strict zero-logging.</li>
+        </ul>
+      </div>
+      <h3 class="sub-section-title">Enterprise, FinTech & E-Commerce Systems</h3>
+      <div class="entry">
+        <div class="entry-header">
+          <div class="entry-title">Ghana API Hub — Centralized Developer Gateway & Sandbox</div>
+        </div>
+        <div class="entry-sub"><strong>Stack:</strong> Next.js 14, Flask, Redis, JWT, Python | <strong>Status:</strong> 6 operational production APIs with interactive playground.</div>
+        <ul>
+          <li>Centralized gateway aggregating essential regional data feeds: fuel prices, Mobile Money account validation, GPS coordinates, exchange rates, and weather data.</li>
+          <li>Built interactive developer playground with code snippets, rate limiting, and Redis caching.</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <div class="entry-header">
+          <div class="entry-title">Microservices Platform — High-Throughput Commercial API Platform</div>
+        </div>
+        <div class="entry-sub"><strong>Stack:</strong> Node.js, TypeScript, MongoDB, Redis, Docker | <strong>Status:</strong> Production architecture complete, deployment ready.</div>
+        <ul>
+          <li>Engineered 10 decoupled microservices providing Paystack payment webhooks, WhatsApp messaging bots, and automated invoicing.</li>
+          <li>Containerized with Docker Compose, featuring Redis message pub/sub and comprehensive OpenAPI documentation.</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <div class="entry-header">
+          <div class="entry-title">Sankofa Finance System — Offline-Capable School Financial Accounting Platform</div>
+        </div>
+        <div class="entry-sub"><strong>Stack:</strong> Next.js 14, Express.js, PostgreSQL, Docker | <strong>Status:</strong> Core enterprise features complete, preparing deployment.</div>
+        <ul>
+          <li>Comprehensive school accounting system with student fee tracking, receipt generation, and offline-resilient local sync.</li>
+          <li>Automated financial reconciliation reports and PDF invoice generation.</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <div class="entry-header">
+          <div class="entry-title">Lippty.com — Multi-Vendor Beauty & Retail Marketplace</div>
+        </div>
+        <div class="entry-sub"><strong>Stack:</strong> Laravel 12, Vue.js 3, Tailwind CSS, Stripe, PayPal | <strong>Status:</strong> Backend complete, vendor onboarding in progress.</div>
+        <ul>
+          <li>Multi-tenant e-commerce ecosystem with independent vendor dashboards, commission settlement, and inventory synchronization.</li>
+          <li>Integrated social commerce tools and multi-currency checkout.</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <div class="entry-header">
+          <div class="entry-title">1957autozone.com — Automotive Spare Parts E-Commerce Platform — <a href="https://1957autozone.com" target="_blank" style="color:var(--accent); text-decoration:none; font-weight:600;">1957autozone.com &rarr;</a></div>
+        </div>
+        <div class="entry-sub"><strong>Stack:</strong> Laravel, Vue.js, Tailwind CSS, MySQL | <strong>Status:</strong> Launched and serving commercial automotive clients.</div>
+        <ul>
+          <li>Delivered full-stack e-commerce solution for auto parts with VIN-based filtering, inventory management, and digital ordering.</li>
+          <li>Provides dealer administration portal and automated customer invoice delivery.</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <div class="entry-header">
+          <div class="entry-title">Graceland Construction Portal — B2B/B2C Corporate Construction & Roofing Platform</div>
+        </div>
+        <div class="entry-sub"><strong>Stack:</strong> Next.js 15, React 19, Shadcn/ui, Tailwind CSS | <strong>Status:</strong> Live and deployed.</div>
+        <ul>
+          <li>Architected responsive corporate web portal featuring 45+ modular UI components, project quotation calculators, and portfolio showcases.</li>
+        </ul>
+      </div>
+      <h3 class="sub-section-title">Mobile, GIS & Distributed Applications</h3>
+      <div class="entry">
+        <div class="entry-header">
+          <div class="entry-title">DriveProfit — Driver Income Analytics & Expense Tracking Mobile App</div>
+        </div>
+        <div class="entry-sub"><strong>Stack:</strong> React Native, Expo, TypeScript, AsyncStorage | <strong>Status:</strong> Production-ready Android APK prepared for Play Store launch.</div>
+        <ul>
+          <li>Built a mobile financial tracker for ride-hailing drivers (Uber, Bolt, Yango) in Ghana.</li>
+          <li>Tracks daily revenues, fuel expenditures, maintenance amortization, and generates exportable profit analytics.</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <div class="entry-header">
+          <div class="entry-title">Revu File Manager — Cross-Platform File Organizer with Encrypted Vault</div>
+        </div>
+        <div class="entry-sub"><strong>Stack:</strong> React Native, Expo, TypeScript, SQLite, AES-256 | <strong>Status:</strong> Core release complete, app store submission in progress.</div>
+        <ul>
+          <li>Engineered high-performance file management system with duplicate detection, categorized browsing, and an encrypted privacy vault.</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <div class="entry-header">
+          <div class="entry-title">Fare Estimator GH — Multi-Modal Public Transit Comparison Mobile App</div>
+        </div>
+        <div class="entry-sub"><strong>Stack:</strong> React Native, Expo, TypeScript | <strong>Status:</strong> 8 screens complete, fare calculation engine active.</div>
+        <ul>
+          <li>Enables commuters to compare real-time costs across trotro routes, shared taxis, and ride-hailing platforms across Accra and Kumasi.</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <div class="entry-header">
+          <div class="entry-title">TRYST Platform — Event Planning & Live Audience Polling Platform — <a href="https://tryst-psi.vercel.app" target="_blank" style="color:var(--accent); text-decoration:none; font-weight:600;">tryst-psi.vercel.app &rarr;</a></div>
+        </div>
+        <div class="entry-sub"><strong>Stack:</strong> Next.js 14, TypeScript, MongoDB, NextAuth.js, Framer Motion | <strong>Status:</strong> Production ready.</div>
+        <ul>
+          <li>End-to-end event platform with ticket booking, role-based administration, and a standalone real-time voting and audience polling engine.</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <div class="entry-header">
+          <div class="entry-title">Eldo Ethereum dApp — Decentralized Ethereum Transaction & Messaging Platform — <a href="https://eldo-five.vercel.app" target="_blank" style="color:var(--accent); text-decoration:none; font-weight:600;">eldo-five.vercel.app &rarr;</a></div>
+        </div>
+        <div class="entry-sub"><strong>Stack:</strong> Solidity, Hardhat, Ethers.js, React.js, MetaMask | <strong>Status:</strong> Deployed on Ethereum testnet.</div>
+        <ul>
+          <li>Web3 decentralized application enabling peer-to-peer ETH transfers with on-chain encrypted metadata, message logs, and MetaMask integration.</li>
+        </ul>
+      </div>
+      <h3 class="sub-section-title">Open Source Frameworks & Developer Systems</h3>
+      <div class="entry">
+        <div class="entry-header">
+          <div class="entry-title">Ludwig Framework — Multi-Platform Developer Framework (Web, Desktop, IoT) — <a href="https://github.com/NanaBright/ludwig" target="_blank" style="color:var(--accent); text-decoration:none; font-weight:600;">github.com/NanaBright/ludwig &rarr;</a></div>
+        </div>
+        <div class="entry-sub"><strong>Stack:</strong> Python 3.8+, CLI Architecture, Built-in ORM & Authentication | <strong>Status:</strong> v0.1.0 released on GitHub.</div>
+        <ul>
+          <li>Architected an open-source framework unifying web services, desktop GUI, and IoT firmware development with zero external runtime dependencies.</li>
+          <li>Features artisan-style CLI tooling, built-in ORM, and integrated authentication modules.</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <div class="entry-header">
+          <div class="entry-title">Ludwig Dashboard — Real-Time Business Intelligence & Analytics Dashboard</div>
+        </div>
+        <div class="entry-sub"><strong>Stack:</strong> Python (Ludwig Framework), Chart.js, Tailwind CSS | <strong>Status:</strong> Complete demonstration platform.</div>
+        <ul>
+          <li>Real-time BI dashboard showcasing Ludwig Framework capabilities with dynamic charts, live metric updates, and responsive reporting layouts.</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <div class="entry-header">
+          <div class="entry-title">Laravel Authentication Starter Kits — Production-Grade Authentication & Authorization Kits</div>
+        </div>
+        <div class="entry-sub"><strong>Stack:</strong> Laravel 11, React, Vue, Tailwind CSS, Sanctum | <strong>Status:</strong> Open source, actively maintained.</div>
+        <ul>
+          <li>Pre-configured authentication boilerplates supporting React, Vue, Blade, and API-only modes with Sanctum token security and role templates.</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <div class="entry-header">
+          <div class="entry-title">WeatherWave — AI-Enhanced Weather Forecast & PWA Application — <a href="https://weather-wave-chi.vercel.app" target="_blank" style="color:var(--accent); text-decoration:none; font-weight:600;">weather-wave-chi.vercel.app &rarr;</a></div>
+        </div>
+        <div class="entry-sub"><strong>Stack:</strong> Next.js 16, React 19, TypeScript, OpenWeatherMap API | <strong>Status:</strong> Live production application.</div>
+        <ul>
+          <li>Progressive Web App combining real-time meteorological forecasting with AI-driven lifestyle recommendations and ambient music player integration.</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <div class="entry-header">
+          <div class="entry-title">PyMap — 16-Region Ghana Route Mapping & GIS Visualization</div>
+        </div>
+        <div class="entry-sub"><strong>Stack:</strong> Python, Leaflet.js, Tailwind CSS | <strong>Status:</strong> Live GIS mapping tool.</div>
+        <ul>
+          <li>Interactive route visualization mapping campaign logistics across all 16 regions of Ghana with region-specific coordinate overlays.</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <div class="entry-header">
+          <div class="entry-title">Interactive Game Collection — Web-Based Classic Games with AI / Minimax Opponents</div>
+        </div>
+        <div class="entry-sub"><strong>Stack:</strong> Next.js, React, TypeScript, Tailwind CSS | <strong>Status:</strong> 10 playable game engines complete.</div>
+        <ul>
+          <li>Suite of 10 classic board and puzzle games (Tic Tac Toe, Connect Four, Sudoku, Snake, 2048) featuring heuristic AI algorithms.</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <div class="entry-header">
+          <div class="entry-title">LinkShort — High-Throughput URL Shortener with Real-Time Analytics</div>
+        </div>
+        <div class="entry-sub"><strong>Stack:</strong> Next.js 13, Prisma ORM, SQLite, Chart.js | <strong>Status:</strong> Production-ready web application.</div>
+        <ul>
+          <li>URL shortening service with GitHub OAuth, geolocation click analytics, dynamic QR code generation, and developer dashboard.</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <div class="entry-header">
+          <div class="entry-title">Contact Management CRUD — Desktop Enterprise Application (.NET WinForms) — <a href="https://github.com/NanaBright/ContactCRUD" target="_blank" style="color:var(--accent); text-decoration:none; font-weight:600;">github.com/NanaBright/ContactCRUD &rarr;</a></div>
+        </div>
+        <div class="entry-sub"><strong>Stack:</strong> C#, WinForms, .NET, SQL Database, DLL Architecture | <strong>Status:</strong> Complete application.</div>
+        <ul>
+          <li>Architected enterprise C# WinForms application for robust contact management with clean separation of UI and SQL persistence via dynamic DLL libraries.</li>
+        </ul>
+      </div>
+      <div class="entry">
+        <div class="entry-header">
+          <div class="entry-title">Contact Service Library — Reusable Service-Oriented Backend Architecture — <a href="https://github.com/NanaBright/contact-us" target="_blank" style="color:var(--accent); text-decoration:none; font-weight:600;">github.com/NanaBright/contact-us &rarr;</a></div>
+        </div>
+        <div class="entry-sub"><strong>Stack:</strong> C#, Class Library, .NET, Service Architecture | <strong>Status:</strong> Complete library.</div>
+        <ul>
+          <li>Reusable C# class library implementing service-oriented architecture, database abstraction layers, and transaction handling.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Education & Qualifications</h2>
+      <div class="entry">
+        <div class="entry-header">
+          <div class="entry-title">University of Energy and Natural Resources (UENR)</div>
+          <div class="entry-meta">Aug 2013 - Jun 2017 | Sunyani, Ghana</div>
+        </div>
+        <div class="entry-sub">Bachelor of Science, Mathematics</div>
+      </div>
+    </section>
+  </div>
 </body>
 </html>

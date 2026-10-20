@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Bright Yanchirah — portfolio
 
-## Getting Started
+A Next.js portfolio for Bright Yanchirah, Senior Full-Stack Software Engineer.
 
-First, run the development server:
+## Run locally
 
-```bash
+```sh
+npm ci
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Validate
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```sh
+npm run typecheck
+npm run build
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+`npm run lint` is also available. The project retains its existing Next.js/Vercel setup.
 
-## Learn More
+## Content
 
-To learn more about Next.js, take a look at the following resources:
+- `lib/portfolio.ts`: public profile, project descriptions, case-study content, and expertise.
+- `app/`: home, work, individual project pages, about, expertise, and contact.
+- `public/projects/`: screenshots of the public Slatetrends and M-HUB homepages, captured on 20 October 2026.
+- `cv/cv-content.json`: editable CV content; see `cv/README.md` for generation and provenance.
+- `app/opengraph-image.tsx`: social sharing image.
+- `app/sitemap.ts` and `app/robots.ts`: crawl metadata.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The portfolio contains selected public work. Kwarleyz's specific systems and company website attribution are intentionally absent. The CV contains only a brief description of software development and IT operations.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+CV downloads use `/Bright_Yanchirah_Senior_Full_Stack_Engineer_CV.pdf`. The older PDF path remains available with the updated content, and the legacy HTML CV directs visitors to the current PDF.
 
-## Deploy on Vercel
+No external font or third-party service is required to build the portfolio. Contact uses email links and a clipboard control; there is no simulated form submission.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Hosting
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Deploy using the existing Vercel project with `npm run build`. Local source changes do not deploy automatically until pushed or otherwise published through the hosting workflow.

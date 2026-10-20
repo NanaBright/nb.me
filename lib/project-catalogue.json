@@ -1,0 +1,615 @@
+[
+  {
+    "slug": "slatetrends",
+    "name": "Slatetrends",
+    "category": "Web platforms",
+    "descriptor": "Ghana Business Directory",
+    "stack": "Next.js 15, React 19, PostgreSQL, Prisma, Leaflet, TypeScript, JWT, Cloudinary",
+    "status": "Active development, core search and listings live.",
+    "bullets": [
+      "Mobile-first directory for discovering and contacting local businesses.",
+      "Verified listings, direct call/directions, vendor dashboard, location services.",
+      "Built owner dashboards, business ownership claims, administrative review, listing reports, and image-management workflows.",
+      "Developed regression coverage for API authorization and PostgreSQL search, including publication filters, geographic radius, opening hours, and pagination."
+    ],
+    "url": "https://slatetrends.com",
+    "aliases": [
+      "Slatetnd - Ghana Business Directory"
+    ],
+    "websiteFeatures": [
+      "Verified Businesses",
+      "Direct Actions",
+      "Mobile-First",
+      "Real-time Data",
+      "Location Services"
+    ],
+    "featured": true,
+    "websiteDescription": "A modern, mobile-first business directory application for Ghana. Users can search local businesses, call directly, get directions, and book rides - no authentication required for browsing.",
+    "websiteStack": [
+      "Next.js 15",
+      "React 19",
+      "PostgreSQL",
+      "Prisma ORM",
+      "Leaflet Maps",
+      "JWT"
+    ],
+    "image": "/projects/slatetrends.jpg",
+    "imageAlt": "Slatetrends public homepage and business discovery interface"
+  },
+  {
+    "slug": "flowstock-pro",
+    "name": "FlowStock Pro",
+    "category": "Business software",
+    "descriptor": "Comprehensive Inventory & POS System with Desktop App",
+    "stack": "Laravel 11, PHP 8.2, Electron 28, Tailwind CSS, MySQL, Docker, Git",
+    "status": "Production ready - cross-platform desktop, web, and PWA support. Implemented CI/CD pipelines with GitHub Actions and Docker to automate builds, tests, and deployments across desktop, web, and PWA environments",
+    "bullets": [
+      "Full-featured ERP for retail, supermarkets, and meat shops with offline desktop capability. Designed and implemented RESTful APIs secured with JWT for POS operations, barcode scanning, multi-branch support, mobile money payments, GRA tax compliance, and thermal receipt generation"
+    ],
+    "url": null,
+    "aliases": [],
+    "websiteFeatures": [],
+    "featured": true
+  },
+  {
+    "slug": "mhub",
+    "name": "M-HUB Technology",
+    "category": "Websites",
+    "descriptor": "Corporate landing page",
+    "stack": "Website development",
+    "status": "Live website",
+    "bullets": [
+      "Created the company landing page introducing technology services and education programmes, with routes to service information, the academy, and contact options."
+    ],
+    "url": "https://m-hubtechnology.com/",
+    "aliases": [],
+    "websiteFeatures": [
+      "Technology services",
+      "Education programmes",
+      "Service navigation",
+      "Contact routes"
+    ],
+    "featured": true,
+    "image": "/projects/mhub.jpg",
+    "imageAlt": "M-HUB Technology landing page"
+  },
+  {
+    "slug": "flowstock-v2",
+    "name": "FlowStock V2",
+    "category": "Business software",
+    "descriptor": "Modern Web-Based Inventory & POS for SMBs",
+    "stack": "Next.js 15, TypeScript, SQLite, Shadcn/ui, Tailwind CSS, Vercel deployment, Git",
+    "status": "Customer ready with 15+ pages complete. Configured CI/CD workflows using GitHub Actions for automated testing and deployment to Vercel. Added unit and integration tests with Jest and React Testing Library to validate real-time dashboard and stock management features",
+    "bullets": [
+      "Rebuilt using Next.js 15 and TypeScript with server-side rendering, responsive design, and a real-time dashboard powered by WebSockets.",
+      "Dashboard analytics, POS, stock management, staff roles, comprehensive reporting."
+    ],
+    "url": "https://flowstock-v2.vercel.app",
+    "aliases": [],
+    "websiteFeatures": [],
+    "featured": false
+  },
+  {
+    "slug": "flowstock",
+    "name": "FlowStock",
+    "category": "Business software",
+    "descriptor": "Laravel ERP & Inventory Management System",
+    "stack": "Laravel 11, PHP 8.2, MySQL, Livewire, Tailwind CSS",
+    "status": "Deployed and actively serving customers.",
+    "bullets": [
+      "Serving active businesses with real-time inventory tracking and sales management.",
+      "POS system, mobile money integration, multi-location support, audit trails, low stock alerts."
+    ],
+    "url": "https://flowstock.lippty.com",
+    "aliases": [
+      "FlowStock - Inventory Management"
+    ],
+    "websiteFeatures": [
+      "Real-time Tracking",
+      "Sales Management",
+      "Low Stock Alerts",
+      "Transaction History",
+      "Dashboard Analytics"
+    ],
+    "featured": false,
+    "websiteDescription": "A comprehensive inventory management system built with Laravel for Yanestee Ventures. Features real-time tracking, sales management, low stock alerts, and multi-user support with role-based permissions.",
+    "websiteStack": [
+      "Laravel",
+      "PHP",
+      "MySQL",
+      "Hostinger",
+      "Multi-user Auth"
+    ]
+  },
+  {
+    "slug": "taxflow",
+    "name": "TaxFlow Ghana",
+    "category": "APIs & finance",
+    "descriptor": "Automated Tax Computation Platform",
+    "stack": "Next.js 15, Express.js, PostgreSQL, JWT",
+    "status": "MVP complete, market-ready.",
+    "bullets": [
+      "REST API and dashboard for computing Ghanaian business taxes (VAT, PAYE, NHIL, GETFund).",
+      "SMEs and accounting firms requiring tax compliance automation."
+    ],
+    "url": "https://tax-api-dashboard.vercel.app",
+    "aliases": [
+      "Ghana Tax Management System"
+    ],
+    "websiteFeatures": [
+      "Tax Calculations",
+      "Transaction History",
+      "PAYE Calculator",
+      "Report Generation",
+      "Public API"
+    ],
+    "featured": false,
+    "websiteDescription": "A comprehensive platform for computing Ghanaian business taxes including VAT, PAYE, NHIL, GETFund, and COVID levy. Features public calculator and authenticated user dashboard with transaction history.",
+    "websiteStack": [
+      "Next.js",
+      "Node.js",
+      "Express",
+      "SQLite",
+      "JWT",
+      "React Context"
+    ]
+  },
+  {
+    "slug": "sankofa",
+    "name": "Sankofa Finance System",
+    "category": "APIs & finance",
+    "descriptor": "Offline School Finance Management Platform",
+    "stack": "Next.js 14, Express.js, PostgreSQL, Docker",
+    "status": "Core features complete, preparing for deployment.",
+    "bullets": [
+      "Finance management system for Ghanaian schools with receipt generation and reporting.",
+      "Transaction tracking, student records, PDF receipts, offline-capable reports."
+    ],
+    "url": null,
+    "aliases": [],
+    "websiteFeatures": [],
+    "featured": false
+  },
+  {
+    "slug": "lippty",
+    "name": "Lippty.com",
+    "category": "Commerce",
+    "descriptor": "Multi-Vendor Beauty Products Marketplace",
+    "stack": "Laravel 12, Vue.js 3, Tailwind CSS, Stripe/PayPal",
+    "status": "Backend complete, preparing for launch.",
+    "bullets": [
+      "Complete e-commerce platform with vendor management and marketplace functionality.",
+      "Multi-vendor support, payment integration, inventory management, social commerce."
+    ],
+    "url": null,
+    "aliases": [],
+    "websiteFeatures": [],
+    "featured": false
+  },
+  {
+    "slug": "1957autozone",
+    "name": "1957autozone.com",
+    "category": "Commerce",
+    "descriptor": "Automotive Parts E-Commerce Platform",
+    "stack": "Laravel, Vue.js, Tailwind CSS",
+    "status": "Completed and launched.",
+    "bullets": [
+      "Successfully launched and serving automotive industry.",
+      "Product catalog, inventory management, customer portal, order processing."
+    ],
+    "url": "https://1957autozone.com",
+    "aliases": [],
+    "websiteFeatures": [],
+    "featured": false
+  },
+  {
+    "slug": "graceland",
+    "name": "Graceland",
+    "category": "Websites",
+    "descriptor": "Construction Company Corporate Website",
+    "stack": "Next.js 15, React 19, Shadcn/ui, Tailwind CSS",
+    "status": "Complete and deployed.",
+    "bullets": [
+      "B2B/B2C website for roofing and construction company in Ghana.",
+      "7 responsive pages, contact forms, modern UI with 45+ components."
+    ],
+    "url": null,
+    "aliases": [],
+    "websiteFeatures": [],
+    "featured": false
+  },
+  {
+    "slug": "driveprofit",
+    "name": "DriveProfit",
+    "category": "Mobile",
+    "descriptor": "Driver Analytics & Profit Tracking App",
+    "stack": "React Native, Expo, TypeScript, AsyncStorage",
+    "status": "Complete APK, prepared for Play Store launch.",
+    "bullets": [
+      "Ghana-based ride-hailing and taxi drivers (Uber, Bolt).",
+      "Daily earnings tracking, fuel cost management, trip analytics, PDF export."
+    ],
+    "url": null,
+    "aliases": [
+      "DriveProfit - Driver Income Tracker"
+    ],
+    "websiteFeatures": [
+      "Trip Tracking",
+      "Profit Analysis",
+      "Smart Directions",
+      "Export Reports",
+      "Monthly Analytics"
+    ],
+    "featured": false,
+    "websiteDescription": "React Native app for Ghanaian ride-hailing drivers to track income, expenses, and daily profits. Features freemium model with basic tracking free and Pro features for ₵50 one-time purchase.",
+    "websiteStack": [
+      "React Native",
+      "Expo",
+      "TypeScript",
+      "AsyncStorage",
+      "React Navigation"
+    ]
+  },
+  {
+    "slug": "revu",
+    "name": "Revu File Manager",
+    "category": "Mobile",
+    "descriptor": "Cross-Platform File Manager with Privacy Vault",
+    "stack": "React Native, Expo, TypeScript, SQLite",
+    "status": "Core screens complete, app store prep in progress.",
+    "bullets": [
+      "Smart file organization with recovery and encrypted privacy features.",
+      "Smart categories, duplicate finder, file recovery, encrypted privacy vault."
+    ],
+    "url": null,
+    "aliases": [],
+    "websiteFeatures": [],
+    "featured": false
+  },
+  {
+    "slug": "fare-estimator",
+    "name": "Fare Estimator GH",
+    "category": "Mobile",
+    "descriptor": "Multi-Modal Transport Fare Comparison App",
+    "stack": "React Native, Expo, TypeScript",
+    "status": "8 screens complete, payment integration in progress.",
+    "bullets": [
+      "Compare fares across Ghanaian transport options (trotro, taxi, ride-hail).",
+      "Company profiles, fare history, favorites, multi-modal comparison."
+    ],
+    "url": null,
+    "aliases": [],
+    "websiteFeatures": [],
+    "featured": false
+  },
+  {
+    "slug": "ghana-api-hub",
+    "name": "Ghana API Hub",
+    "category": "APIs & finance",
+    "descriptor": "Ghana-Specific API Gateway & Developer Playground",
+    "stack": "Next.js 14, Flask, Redis, JWT",
+    "status": "6 operational APIs with interactive playground and code examples.",
+    "bullets": [
+      "Centralized API platform for essential Ghanaian services.",
+      "Fuel prices, mobile money validation, GPS coordinates, exchange rates, weather data."
+    ],
+    "url": null,
+    "aliases": [],
+    "websiteFeatures": [],
+    "featured": false
+  },
+  {
+    "slug": "microservices",
+    "name": "Microservices Platform",
+    "category": "APIs & finance",
+    "descriptor": "Revenue-Focused API Platform for Ghanaian Businesses",
+    "stack": "Node.js, TypeScript, MongoDB, Redis, Docker",
+    "status": "Architecture complete, deployment ready.",
+    "bullets": [
+      "10 microservices including no-code builders and payment integration.",
+      "Paystack integration, WhatsApp webhooks, API documentation, no-code tools."
+    ],
+    "url": null,
+    "aliases": [],
+    "websiteFeatures": [],
+    "featured": false
+  },
+  {
+    "slug": "tryst",
+    "name": "TRYST",
+    "category": "Web platforms",
+    "descriptor": "Event Planning & Management Platform",
+    "stack": "Next.js 14, TypeScript, MongoDB, NextAuth.js, Framer Motion",
+    "status": "Production ready.",
+    "bullets": [
+      "Event management, ticket booking, standalone polling, real-time voting, admin dashboard.",
+      "Standalone polling system for enhanced audience engagement."
+    ],
+    "url": "https://tryst-psi.vercel.app",
+    "aliases": [
+      "TRYST Platform"
+    ],
+    "websiteFeatures": [
+      "Standalone Polls",
+      "Real-time Voting",
+      "Admin Dashboard",
+      "Payment Integration",
+      "Role-based Access"
+    ],
+    "featured": false,
+    "websiteDescription": "A comprehensive event planning platform with standalone polling system, role-based authentication, and super admin dashboard. Features real-time voting, poll sharing, and complete event management.",
+    "websiteStack": [
+      "Next.js 14",
+      "TypeScript",
+      "MongoDB",
+      "NextAuth.js",
+      "Tailwind CSS",
+      "Framer Motion"
+    ]
+  },
+  {
+    "slug": "privyvpn",
+    "name": "PrivyVPN",
+    "category": "Systems & desktop",
+    "descriptor": "Personal VPN with SOCKS5 Proxy & TLS Encryption",
+    "stack": "Rust (Tokio), Python, SOCKS5, TLS 1.3",
+    "status": "15/15 integration tests passing, production ready.",
+    "bullets": [
+      "High-performance privacy-focused VPN built in Rust with Python management CLI.",
+      "8 server locations, TLS 1.3 encryption, web dashboard, cross-platform support."
+    ],
+    "url": null,
+    "aliases": [],
+    "websiteFeatures": [],
+    "featured": false
+  },
+  {
+    "slug": "chekbuk",
+    "name": "Chekbuk",
+    "category": "Blockchain",
+    "descriptor": "Dynamic Risk Mitigation Platform",
+    "stack": "React, Web3, Smart Contracts",
+    "status": "Live - contributed frontend development at Afria Technologies.",
+    "bullets": [
+      "Smart contract-based escrow for real estate, M&A, precious metals, and e-commerce.",
+      "Autonomous deposits, multi-sector support, risk mitigation via smart contracts."
+    ],
+    "url": "https://chekbuk.com",
+    "aliases": [],
+    "websiteFeatures": [],
+    "featured": false
+  },
+  {
+    "slug": "eldo",
+    "name": "Eldo",
+    "category": "Blockchain",
+    "descriptor": "Decentralized Ethereum Transaction Platform",
+    "stack": "Solidity, Hardhat, Ethers.js, React.js, MetaMask",
+    "status": "Deployed on Ethereum testnet.",
+    "bullets": [
+      "User-friendly dApp for Ethereum transactions with metadata and messaging.",
+      "Send/receive ETH with messages, wallet integration, transaction history."
+    ],
+    "url": "https://eldo-five.vercel.app",
+    "aliases": [
+      "Eldo - Ethereum dApp"
+    ],
+    "websiteFeatures": [
+      "Wallet Integration",
+      "ETH Transactions",
+      "Message Attachments",
+      "Transaction History",
+      "Smart Contracts"
+    ],
+    "featured": false,
+    "websiteDescription": "A decentralized application enabling users to send and receive Ethereum transactions with messages and metadata via a user-friendly web interface. Built with React frontend and Solidity smart contracts on Goerli testnet.",
+    "websiteStack": [
+      "React",
+      "Solidity",
+      "Hardhat",
+      "Ethers.js",
+      "Tailwind CSS",
+      "MetaMask"
+    ]
+  },
+  {
+    "slug": "ludwig",
+    "name": "Ludwig Framework",
+    "category": "Developer tools",
+    "descriptor": "Multi-Platform Development Framework",
+    "stack": "Python 3.8+, CLI tools, built-in ORM and authentication",
+    "status": "v0.1.0 released.",
+    "bullets": [
+      "Unified framework for web, desktop, and IoT with zero external dependencies.",
+      "Full-stack web apps, cross-platform desktop software, IoT firmware templates."
+    ],
+    "url": "https://github.com/NanaBright/ludwig",
+    "aliases": [
+      "Ludwig ⚙️"
+    ],
+    "websiteFeatures": [
+      "Native Web Framework",
+      "Cross-platform GUI",
+      "IoT Templates",
+      "Zero Dependencies",
+      "Artisan CLI"
+    ],
+    "featured": false,
+    "websiteDescription": "A complete modern development platform for Web, Desktop, and Embedded systems. Combines Python-inspired syntax with Laravel power, enabling full-stack web apps, cross-platform desktop software, and IoT firmware - all with unified CLI and zero dependencies.",
+    "websiteStack": [
+      "Python",
+      "Laravel",
+      "Arduino",
+      "CLI",
+      "Web Framework",
+      "IoT"
+    ]
+  },
+  {
+    "slug": "ludwig-dashboard",
+    "name": "Ludwig Dashboard",
+    "category": "Web platforms",
+    "descriptor": "Business Intelligence Dashboard",
+    "stack": "Python (Ludwig Framework), Chart.js, Tailwind CSS",
+    "status": "95% complete.",
+    "bullets": [
+      "Real-time BI dashboard demonstrating Ludwig Framework capabilities.",
+      "4 pages, live charts, responsive design, data visualization."
+    ],
+    "url": null,
+    "aliases": [],
+    "websiteFeatures": [],
+    "featured": false
+  },
+  {
+    "slug": "laravel-auth",
+    "name": "Laravel Authentication Starter Kits",
+    "category": "Developer tools",
+    "descriptor": "Production-Ready Authentication Solutions",
+    "stack": "Laravel 11, React, Vue, Tailwind CSS, Sanctum",
+    "status": "Open source, actively maintained.",
+    "bullets": [
+      "Complete authentication starter kits with multiple frontend flavors.",
+      "React, Vue, Blade, and API-only modes; JWT, Sanctum, role templates."
+    ],
+    "url": null,
+    "aliases": [],
+    "websiteFeatures": [],
+    "featured": false
+  },
+  {
+    "slug": "weatherwave",
+    "name": "WeatherWave",
+    "category": "Web platforms",
+    "descriptor": "AI-Enhanced Weather Application",
+    "stack": "Next.js 16, React 19, TypeScript, OpenWeatherMap API",
+    "status": "Live and deployment ready.",
+    "bullets": [
+      "Weather forecasting with health recommendations, offline PWA, and music integration.",
+      "AI insights, offline support android widget PWA, dynamic UI."
+    ],
+    "url": "https://weather-wave-chi.vercel.app",
+    "aliases": [],
+    "websiteFeatures": [
+      "Weather Forecasting",
+      "Music Integration",
+      "User Personalization",
+      "API Integration"
+    ],
+    "featured": false,
+    "websiteDescription": "A weather application with integrated music player. Built using Next.js, GEODB Cities API, OpenWeather API, and Audiomack API with personalized user experience.",
+    "websiteStack": [
+      "Next.js",
+      "GEODB Cities API",
+      "OpenWeather API",
+      "Audiomack API"
+    ]
+  },
+  {
+    "slug": "pymap",
+    "name": "PyMap",
+    "category": "Web platforms",
+    "descriptor": "Ghana Campaign Route Visualization",
+    "stack": "Python, Leaflet.js, Tailwind CSS",
+    "status": "Complete and live on GitHub Pages.",
+    "bullets": [
+      "Interactive mapping of campaign routes across all 16 Ghana regions.",
+      "Region-by-region routes, interactive Leaflet maps, GitHub Pages hosting."
+    ],
+    "url": null,
+    "aliases": [],
+    "websiteFeatures": [],
+    "featured": false
+  },
+  {
+    "slug": "games",
+    "name": "Game Collection",
+    "category": "Web platforms",
+    "descriptor": "Classic Board Games with AI Opponents",
+    "stack": "Next.js, React, TypeScript, Tailwind CSS",
+    "status": "10 games complete, polish in progress.",
+    "bullets": [
+      "Web-based collection of 10 classic games with AI opponents.",
+      "Tic Tac Toe, Connect Four, Sudoku, Snake, 2048, Memory Match and more."
+    ],
+    "url": null,
+    "aliases": [],
+    "websiteFeatures": [],
+    "featured": false
+  },
+  {
+    "slug": "linkshort",
+    "name": "LinkShort",
+    "category": "Web platforms",
+    "descriptor": "URL Shortener with Analytics",
+    "stack": "Next.js 13, Prisma, SQLite, Chart.js",
+    "status": "Core features complete, deployment in progress.",
+    "bullets": [
+      "GitHub OAuth, click analytics, QR code generation, dashboard."
+    ],
+    "url": null,
+    "aliases": [],
+    "websiteFeatures": [],
+    "featured": false
+  },
+  {
+    "slug": "xcro",
+    "name": "XCRO.io - Risk Mitigation Platform",
+    "category": "Blockchain",
+    "descriptor": "FinTech",
+    "stack": "Frontend Development, Smart Contracts, Web3, React",
+    "status": "Live",
+    "bullets": [
+      "A platform offering dynamic risk mitigation in business transactions through smart contracts. Beneficial for real estate, private jet charter, M&A, precious metals, and e-commerce with autonomous deposit management."
+    ],
+    "url": "https://xcro.io",
+    "aliases": [],
+    "websiteFeatures": [
+      "Smart Contracts",
+      "Risk Mitigation",
+      "Autonomous Deposits",
+      "Multi-sector Support"
+    ],
+    "featured": false
+  },
+  {
+    "slug": "contact-crud",
+    "name": "Contact Management CRUD",
+    "category": "Systems & desktop",
+    "descriptor": "Desktop Application",
+    "stack": "C#, WinForms, .NET, SQL Database, DLL Architecture",
+    "status": "Complete",
+    "bullets": [
+      "A C# WinForms application for managing contact information with full CRUD operations. Features clean separation between UI and database operations through .dll library architecture."
+    ],
+    "url": "https://github.com/NanaBright/ContactCRUD",
+    "aliases": [],
+    "websiteFeatures": [
+      "CRUD Operations",
+      "WinForms UI",
+      "Database Integration",
+      "Service Architecture"
+    ],
+    "featured": false
+  },
+  {
+    "slug": "contact-service",
+    "name": "Contact Service Library",
+    "category": "Systems & desktop",
+    "descriptor": "Backend Service",
+    "stack": "C#, Class Library, .NET, Service Architecture",
+    "status": "Complete",
+    "bullets": [
+      "A complementary C# class library providing backend service for contact management. Handles CRUD operations and database communication, demonstrating service-oriented architecture."
+    ],
+    "url": "https://github.com/NanaBright/contact-us",
+    "aliases": [],
+    "websiteFeatures": [
+      "Backend Service",
+      "CRUD Operations",
+      "Database Abstraction",
+      "Library Design"
+    ],
+    "featured": false
+  }
+]
